@@ -1,0 +1,192 @@
+.tax-portal-scope {
+  --bg-card: #ffffff;
+  --bg-tertiary: #f1f5f9;
+  --bg-input: #ffffff;
+  --border-color: #e2e8f0;
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --text-muted: #64748b;
+  --primary-color: #2563eb;
+  --accent-primary: #2563eb;
+  --success: #10b981;
+  --warning: #f59e0b;
+  --danger: #ef4444;
+  color: var(--text-primary);
+}
+
+.dark .tax-portal-scope {
+  --bg-card: #0f172a;
+  --bg-tertiary: #1e293b;
+  --bg-input: #1e293b;
+  --border-color: #334155;
+  --text-primary: #f8fafc;
+  --text-secondary: #cbd5e1;
+  --text-muted: #94a3b8;
+  --primary-color: #3b82f6;
+  --accent-primary: #3b82f6;
+}
+
+.tax-portal-scope .page-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.tax-portal-scope .page-header h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.tax-portal-scope .page-header p {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin: 4px 0 0;
+}
+
+.tax-portal-scope .card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.05);
+}
+
+.tax-portal-scope .grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+@media (max-width: 900px) {
+  .tax-portal-scope .grid-2 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.tax-portal-scope .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+.tax-portal-scope .form-group label {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.tax-portal-scope .form-control {
+  width: 100%;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  background: var(--bg-input);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.tax-portal-scope .btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: all 0.15s ease;
+}
+
+.tax-portal-scope .btn-sm {
+  padding: 5px 10px;
+  font-size: 0.75rem;
+}
+
+.tax-portal-scope .btn-primary {
+  background: #2563eb;
+  color: #ffffff;
+}
+
+.tax-portal-scope .btn-primary:hover {
+  background: #1d4ed8;
+}
+
+.tax-portal-scope .btn-outline {
+  background: transparent;
+  border-color: var(--border-color);
+  color: var(--text-primary);
+}
+
+.tax-portal-scope .btn-outline:hover {
+  background: var(--bg-tertiary);
+}
+
+.tax-portal-scope .btn-success {
+  background: #10b981;
+  color: #ffffff;
+}
+
+.tax-portal-scope .btn-success:hover {
+  background: #059669;
+}
+
+.tax-portal-scope .badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 600;
+}
+
+.tax-portal-scope .badge-success {
+  background: rgba(16, 185, 129, 0.14);
+  color: #059669;
+}
+
+.tax-portal-scope .badge-warning {
+  background: rgba(245, 158, 11, 0.14);
+  color: #d97706;
+}
+
+.tax-portal-scope .badge-danger {
+  background: rgba(239, 68, 68, 0.14);
+  color: #dc2626;
+}
+
+.tax-portal-scope .badge-info {
+  background: rgba(37, 99, 235, 0.12);
+  color: #2563eb;
+}
+
+.tax-portal-scope .table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.tax-portal-scope table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.82rem;
+}
+
+.tax-portal-scope th,
+.tax-portal-scope td {
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--border-color);
+  text-align: left;
+}
+
+.tax-portal-scope th {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--text-muted);
+  background: var(--bg-tertiary);
+}
